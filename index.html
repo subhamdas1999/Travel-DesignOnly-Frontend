@@ -1,0 +1,816 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>www.royaltravel.com</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/agency.min.css" rel="stylesheet" type="text/css" media="all"/>  <!-- for background banner video-->
+
+<script language="javascript" src="js/bootstrap.min.js"></script>
+
+
+
+
+<!--taken from w3school start-->
+
+<script language="javascript" src="js/jquery.min.js"></script>
+
+<script language="javascript" src="js/agency.min.js"></script> <!-- for background banner video -->
+
+<script src="js/bootstrap.min.js"></script>
+
+<script language="javascript" src="js/popper.min.js"></script>
+<script src="js/smoothscroll.js" language="javascript"></script>
+
+
+<!--taken from w3school end-->
+
+
+<!--internal css start-->
+
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+
+
+<style type="text/css">
+  
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#Home {
+}
+
+#About {
+
+  margin-top: 50px;
+    padding-top: 50px;
+}
+#Services {
+
+margin-top: 50px;
+    padding-top: 50px;
+
+}
+#Contact {
+
+  margin-top: 50px;
+    padding-top: 50px;
+
+}
+
+
+
+
+
+#scroll{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#0d0d0d;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#scroll:hover {
+  background-color:#404040;
+}
+.button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 70px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #ffcc00;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+.bg {
+
+
+  background:url(images/srbg.jpg) no-repeat !important;
+  
+  background-size:cover;
+
+  max-height: 100%;
+}
+
+
+</style>
+
+
+<!--internal css end-->
+
+ 
+</head>
+
+<body>
+
+	<!--menu start-->
+
+<!-- nevigation start-->
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+
+<!--<a class="navbar-brand" href="#">ROYAL TRAVEL</a>-->
+
+<div class="container-fluid">
+
+
+<a class="navbar-brand" href="#">
+    <img src="images/logo.png" alt="Logo" style="width:50px;">
+  </a>
+
+
+ <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#Home">Home</a> <!-- call id as "#Home" for parallexing -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About">About</a>  <!-- call id as "#About" for parallexing -->
+      </li>
+
+      <!--Drop Down Start-->
+      
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Services
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Electornic Item</a>
+        <a class="dropdown-item" href="#">Cell Phone Item</a>
+        <a class="dropdown-item" href="#">Cloth Wear Item</a>
+      </div>
+    </li>
+
+      <!--Drop Down End-->
+
+    <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Package</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link" href="#Contact">Contact</a>
+      </li>  
+
+
+    </ul>
+
+</div>
+  </div>
+
+  </nav> 
+
+
+<!-- nevigation ends-->
+
+<!--menu end-->
+
+
+
+
+
+
+
+
+<!--Banner Start-->
+
+
+<!--<div class="header-container">
+    
+      Video container Start 
+    
+    <div class="video-container">
+    
+    <video  controls="controls" preload="true" volume="0" autoplay
+     loop poster="pic.jpg">
+    
+    <source src="video/Khawto.mp4" type="video/mp4">
+    </video>
+    
+    </div>
+
+     Video container End 
+     
+     <h6 class="img-responsive">FULL WIDTH VIDEO IN BOOTSTRAP</h6>
+    
+ </div>-->
+
+
+<!-- banner start still pic-->
+
+
+  <!-- Indicators -->
+ 
+
+   <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/slide1.jpg" class="img-fluid" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="images/slide2.jpg" class="img-fluid" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="images/slide3.jpg" class="img-fluid" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+</section>
+
+<!-- banner end still pic-->
+
+
+
+
+
+
+
+
+
+
+
+<!--Banner End-->
+
+<!--body top start-->
+
+<section id="Home">
+
+<div class="container">
+	
+	<div class="jumbotron">
+
+		<h1>Welcome to Our Website</h1>
+		<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu</h5>
+
+		<button type="button" class="btn btn-outline-warning">View more</button>
+
+	</div>
+
+
+
+
+</div>
+
+
+
+
+<!--body top End-->
+
+<!--body mid Start-->
+
+<div class="container">
+	
+<div class="row">
+  <div class="col-sm-4">
+  <h5 class="text-center">Our Euerop Tour Package</h5>
+ 
+<p align="center">
+  <img src="images/sea-green-sea-blue-bratislava-28.jpg" class="rounded" alt="#" >
+</p>
+  <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum .It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum </p>
+
+  <button type="button" class="btn btn-outline-warning">View more</button>
+
+
+
+  </div>
+
+
+
+  <div class="col-sm-4">
+  	
+<h5 class="text-center">Our Euerop Tour Package</h5>
+
+<p align="center">
+  <img src="images/sea-green-sea-blue-bratislava-28.jpg" class="rounded-circle" alt="#" >
+</p>
+  <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum .It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum </p>
+
+  <button type="button" class="btn btn-outline-warning">View more</button>
+
+
+  </div>
+  <div class="col-sm-4">
+  	
+<h5 class="text-center">Our Euerop Tour Package</h5>
+
+<p align="center"><img src="images/sea-green-sea-blue-bratislava-28.jpg" class="img-thumbnail"  alt="#" ></p>
+
+  <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum .It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum </p>
+
+  <button type="button" class="btn btn-outline-warning">View more</button>
+
+  </div>
+  
+</div>
+</div>
+</section>
+
+<!-- aaaaaaaaaaaaadddddddddddddddddddddddddddd-->
+
+
+
+
+ <section id="About">
+
+    
+    <div class="container">
+
+<h2 class="text-primary text-center text-bold">About Us</h2>
+
+      <div class="row">
+        <div class="col-sm-4 mx-auto">
+        
+        <img src="images/abcd.jpg" class="rounded-circle img-fluid" alt="Cinque Terre">  
+
+        </div>
+
+
+        <div class="col-sm-8 mx-auto">
+          <p class="text-left text-dark">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template featuresThis is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template featuresThis is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features </p><br>
+
+             
+        </div>
+
+
+          <div class="col-sm-12 mx-auto">
+
+            <p class="text-left text-dark">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template featuresThis is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template featuresThis is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features </p><br>
+
+ <button type="button" class="btn btn-primary">Read More</button>
+      </div>
+    </div>
+</div>
+  </section>
+
+
+<!-- aaaaaaaaaaaaadddddddddddddddddddddddddddd-->
+
+
+
+<!--body mid End-->
+
+<div class="container">
+
+<h3>Details of tour</h3> 
+
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum .It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum..... </p>
+
+
+  <div id="demo" class="collapse">
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    unt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+unt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+unt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+  </div>
+
+
+ <a href="#demo" class="btn btn-primary" data-toggle="collapse">Read More</a>
+  
+
+
+</div>
+
+
+<div class="container">
+<div class="row">
+
+<div class="col-sm-4">
+	
+<p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+
+<footer class="blockquote-footer">From WWF's website</footer>
+  </blockquote>
+
+
+
+
+</div>
+<div class="col-sm-4">
+	
+
+<p style="text-align: left;">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+<p class="text-lowercase">high rated product</p>
+  <p class="text-uppercase">low cost product</p>      
+  <p class="text-capitalize">free products</p>
+
+
+
+</div>
+<div class="col-sm-4">BOX1</div>
+</div>
+
+</div>
+
+<div class="container">
+  <h1>Our Categories:</h1>
+  <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+  <h1 class="display-4">India tour</h1>
+  
+</div>
+
+
+<!-- HORIZONTAL AND VERTICAL BUTTON  START-->
+<div class="container">
+
+
+
+<div class="row"> 	
+
+	<div class="col-sm-8">
+<p> are used to stand out more than normal headings (larger font-size and lighter font-weigh</p>
+
+ <div class="btn-group">
+  <button type="button" class="btn btn-primary">5 days 4 nights</button>
+  <button type="button" class="btn btn-danger">6 days 5 nights</button>
+  
+</div>
+</div>
+
+
+
+	<div class="col-sm-4">
+<p> are used to stand out more than normal headings (larger font-size and lighter font-weigh</p>
+
+ <div class="btn-group-vertical">
+  <button type="button" class="btn btn-info">same trip less cost</button>
+  <button type="button" class="btn btn-primary">discount trip</button>
+  
+</div>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+<!-- HORIZONTAL AND VERTICAL BUTTON ENDS -->
+
+<!-- form start -->
+<section id="Contact">
+
+<div class="container">
+
+<form action="/action_page.php">
+
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+
+
+  <div class="form-group">
+    <label for="uname">User name</label>
+    <input type="uname" class="form-control" id="uname">
+  </div>
+
+
+
+
+
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+</section>
+<br>
+
+<!-- form ends -->
+
+
+
+
+
+<!-- model / new window start -->
+
+<div class="container">
+  <h4>REVIEW</h4>
+  <p>Our produc is awesome please review somthing</p>
+
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+    CLICK HERE
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">letest Update</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Please write something intersting
+
+             <div class="form-group">
+    		
+    		<input type="uname" class="form-control" id="uname">
+  			</div>
+
+
+
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br>
+
+<!-- model / new window ends -->
+
+
+<!--footer start-->
+<div class="container-fluid">
+	
+<div class="row">
+	<div class="container-fluid">
+	<nav class="navbar navbar-expand-sm bg-dark">
+		
+             <!-- 1st coloum start-->
+         	<div class="col-sm-4">
+         		<div class="container">
+  			<h2><p class="text-success">North India Tour</p></h2>
+		  	<p class="text-light ">CLICK BELLOW</p>
+  			<ul class="nav flex-column">
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Gold Package </a>
+    		</li>
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Platinum Package</a>
+    		</li>
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Premium Package</a>
+    		</li>
+    
+  </ul>
+</div>
+</div>
+
+
+<!-- 1st coloum ends-->
+
+<!-- 2nd coloum start-->
+			<div class="col-sm-4">
+         		<div class="container">
+  			<h2><p class="text-success">South India Tour</p></h2>
+		  	<p class="text-light ">CLICK BELLOW</p>
+  			<ul class="nav flex-column">
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Gold Package</a>
+    		</li>
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Silver Package</a>
+    		</li>
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Discounted Package</a>
+    		</li>
+    
+  </ul>
+</div>
+</div>
+
+			<!-- 2nd coloum ends-->
+
+
+
+			<!-- 3nd coloum starts-->
+			<div class="col-sm-4">
+         		<div class="container">
+  			<h2><p class="text-success">International</p></h2>
+		  	<p class="text-light ">CLICK BELLOW</p>
+  			<ul class="nav flex-column">
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Discounted Package</a>
+    		</li>
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Best offers Package</a>
+    		</li>
+    		<li class="nav-item">
+      		<a class="nav-link" href="#">Super Delux Package</a>
+    		</li>
+    
+  </ul>
+</div>
+</div>
+
+            <!-- 3nd coloum ends-->
+
+
+
+
+
+	</nav>
+	
+
+
+</div>
+</div>
+
+
+<!-- ROW STARTS HERE-->
+<div class="row">
+<div class="container-fluid">
+<nav class="navbar navbar-expand-sm bg-dark"></nav>
+
+
+ <ul class="nav justify-content-center bg-secondary"> <!-- only add "bg-dark" at end--> 
+    <li class="nav-item">
+    	
+      <a class="nav-link" href="#">
+      	<p class="text-danger">
+      		HOME
+      	</p>
+      </a>
+
+
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+      	<p class="text-danger">ABOUT</p>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+      	<p class="text-danger">SERVICES</p>
+      </a>
+	</li>
+
+      <li class="nav-item">
+      <a class="nav-link" href="#">
+      	<p class="text-danger">
+      		PACKAGES
+      	</p>
+      </a>
+    </li>
+     
+
+</ul>
+
+</div>
+ 
+</div>
+
+<!-- ROW ENDS HERE-->
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<!--footer End-->
+<!-- when you tap about , home , contact it will go down for that we have used this script-->
+
+<script>
+//Get the button
+var mybutton = document.getElementById("scroll");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!-- ENDS when you tap about , home , contact it will go down for that we have used this script-->
+
+
+
+</body>
+</html>
+
